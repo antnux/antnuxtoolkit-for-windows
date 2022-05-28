@@ -1,2 +1,2 @@
 pip install webbrowser
-start install
+start install.py

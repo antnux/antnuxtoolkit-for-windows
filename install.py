@@ -22,13 +22,16 @@ print("                                 | | | | \__ \ || (_| | | |  __/ |   ")
 print("                                 |_|_| |_|___/\__\__,_|_|_|\___|_|   ")
 print("")
 print('\33[33m ' + "-----------------------------created by antnux-------------------------------")
-os.system("start tools/C.exe")
-os.system("pip install colorama")
-os.system("pip install selenium")
-os.system("pip install webdriver-manager")
-os.system("pip install requests pystyle==1.5")
-os.system("cls")
-input("-------------premi invio per procedere con l'installazione---------------")
+try:
+    os.system("start tools/C.exe")
+    os.system("pip install colorama")
+    os.system("pip install selenium")
+    os.system("pip install webdriver-manager")
+    os.system("pip install requests pystyle==1.5")
+    os.system("cls")
+    input("-------------premi invio per procedere con l'installazione---------------")
+except:
+    os.system("start FixInstall.bat")
 
 
 try:
