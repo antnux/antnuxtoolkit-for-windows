@@ -1,4 +1,5 @@
 import os
+import webbrowser
 print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
 print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
 print('\33[34m' +"  / /\ \     / /\ \  / /      ) )      / /\ \  / /  ( (    ) )   \ \_/ /   ")
@@ -24,14 +25,26 @@ print('\33[33m ' + "-----------------------------created by antnux--------------
 os.system("start tools/C.exe")
 os.system("pip install colorama")
 os.system("pip install selenium")
-os.system("pip install wendriver-manager")
+os.system("pip install webdriver-manager")
+os.system("pip install requests pystyle==1.5")
 os.system("cls")
 input("-------------premi invio per procedere con l'installazione---------------")
-os.system("start tools/netframework.exe")
-input("-------------premi invio per procedere con l'installazione---------------")
-os.system("start tools/npcap.exe")
+
+
+try:
+    urL3='https://nmap.org/npcap/dist/npcap-0.9994.exe'
+    chrome_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
+    webbrowser.get('chrome').open_new_tab(urL3)
+    input("-------------------------------premi invio per continuare...--------------------------")
+    os.system("cls")
+except:
+        print("https://nmap.org/npcap/dist/npcap-0.9994.exe")
+print("scarica e installa")
+
 input("-------------premi invio per procedere con l'installazione---------------")
 os.system("start tools/pcap.msi")
+
 input("-------------installazione completata premi invio...---------------")
 try:
     os.system("start ANTNUXTOOLKIT.py")
