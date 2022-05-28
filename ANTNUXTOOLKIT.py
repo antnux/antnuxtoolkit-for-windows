@@ -173,7 +173,8 @@ if scelta == 5:
     print('\33[33m ' + "-----------------------------created by antnux-------------------------------")
     print("1. LANC REMASTERED")
     print("2. Profile Script")
-    print("3. Torna Indietro")
+    print("3. Save Wizard")
+    print("4. Torna Indietro")
     scelta3 = int(input("> "))
     if scelta3 == 1:
         try:
@@ -183,6 +184,66 @@ if scelta == 5:
             os.system("start ANTNUXTOOLKIT.py")
         except:
             os.system("start install.py")
+    if scelta3 == 3:
+        os.system("cls")
+        print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
+        print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
+        print('\33[34m' +"  / /\ \     / /\ \  / /      ) )      / /\ \  / /  ( (    ) )   \ \_/ /   ")
+        print('\33[34m' +" ( (__) )    ) ) ) ) ) )     ( (       ) ) ) ) ) )   ) )  ( (     \   /    ")
+        print('\33[34m' +"  )    (    ( ( ( ( ( (       ) )     ( ( ( ( ( (   ( (    ) )    / _ \    ")
+        print('\33[34m' +" /  /\  \   / /  \ \/ /      ( (      / /  \ \/ /    ) \__/ (   _/ / \ \_  ")
+        print('\33[34m' +"/__(  )__\ (_/    \__/       /__\    (_/    \__/     \______/  (__/   \__) ")
+
+        print('\33[34m' + " ________     ____       ____     _____        __   ___    _____   ________ ")
+        print('\33[34m' +"(___  ___)   / __ \     / __ \   (_   _)      () ) / __)  (_   _) (___  ___) ")
+        print('\33[34m' +"   ) )      / /  \ \   / /  \ \    | |        ( (_/ /       | |       ) )    ")
+        print('\33[34m' +"   ( (     ( ()  () ) ( ()  () )   | |        ()   (        | |      ( (     ")
+        print('\33[34m' +"   ) )     ( ()  () ) ( ()  () )   | |   __   () /\ \       | |       ) )    ")
+        print('\33[34m' +"   ( (      \ \__/ /   \ \__/ /  __| |___) )  ( (  \ \     _| |__    ( (     ")
+        print('\33[34m' +"   /__\      \____/     \____/   \________/   ()_)  \_\   /_____(    /__\    ")
+        print('\33[33m ' + "-----------------------------created by antnux-------------------------------")
+        print("1. install Save Wizard")
+        print("2. install Save Editor")
+        print("3. install MoneyFreeze Save")
+        print("4. Torna Indietro")
+        scelta6 = int(input("> "))
+        if scelta6 == 1:
+            try:
+                urL6='https://www.savewizard.net/swps4max.zip'
+                chrome_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
+                webbrowser.get('chrome').open_new_tab(urL6)
+                os.system("cls")
+                os.system("start ANTNUXTOOLKIT.py")
+            except:
+                print("https://www.savewizard.net/swps4max.zip")
+            
+            os.system("cls")
+            os.system("start ANTNUXTOOLKIT.py")
+            input("-------------------------------premi invio per continuare...--------------------------")
+        if scelta6 == 2:
+            os.system("start tools/saveeditor.exe")
+            input("-------------------------------premi invio per continuare...--------------------------")
+            os.system("cls")
+            os.system("start ANTNUXTOOLKIT.py")
+        if scelta6 == 3:
+            try:
+                urL9='https://drive.google.com/file/d/1Fm-kZmlt34-kVhfLGqI8PJkedfw6wVJ2/view'
+                chrome_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
+                webbrowser.get('chrome').open_new_tab(urL9)
+                input("-------------------------------premi invio per continuare...--------------------------")
+                os.system("cls")
+                os.system("start ANTNUXTOOLKIT.py")
+            except:
+                print("https://drive.google.com/file/d/1Fm-kZmlt34-kVhfLGqI8PJkedfw6wVJ2/view")
+        if scelta6 == 4:
+            input("-------------------------------premi invio per continuare...--------------------------")
+            os.system("cls")
+            os.system("start ANTNUXTOOLKIT.py")
+                
+
+    
     if scelta3 ==2:
         os.system("clear")
         print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
@@ -252,9 +313,10 @@ if scelta == 6:
     print("4. ????")
     print("5. ????")
     print("6. Torna Indietro")
-    scelta5 = int(input())
+    scelta5 = int(input("> "))
     if scelta5 == 1:
         try:
+            os.system("start tools/Anon-SMS/send")
             os.system("start tools/Anon-SMS/send")
             input("-------------------------------premi invio per continuare...--------------------------")
             os.system("start ANTNUXTOOLKIT.py")
