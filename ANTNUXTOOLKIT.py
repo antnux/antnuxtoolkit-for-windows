@@ -27,7 +27,8 @@ print("2. Port Scan")
 print("3. DDoS")
 print("4. Windows Activator")
 print("5. PS4 Tools")
-print("6. Extra")
+print("6. Information Gathering")
+print("7. Extra")
 scelta = int(input("> "))
 if scelta == 1:
     os.system("ipconfig")
@@ -77,7 +78,8 @@ if scelta == 3:
     print('\33[33m ' + "-----------------------------created by antnux-------------------------------")
     print("1. bastarddosser")
     print("2. stresser.ai")
-    print("3. Torna Indietro")
+    print("3. ping")
+    print("4. Torna Indietro")
     scelta1 = int(input("> "))
     if scelta1 == 1:
         try:
@@ -102,6 +104,9 @@ if scelta == 3:
             except:
                 print("https://stresser.ai")
     if scelta1 == 3:
+        ipaddr = input('inserisci il target: ')
+        os.system("ping " + ipaddr)
+    if scelta1 == 4:
         os.system("cls")
         os.system("start ANTNUXTOOLKIT.py")
 
@@ -207,6 +212,10 @@ if scelta == 5:
         print("3. install MoneyFreeze Save")
         print("4. Torna Indietro")
         scelta6 = int(input("> "))
+        if scelta3 == 4:
+            os.system("cls")
+            os.system("start ANTNUXTOOLKIT.py")
+
         if scelta6 == 1:
             try:
                 urL6='https://www.savewizard.net/swps4max.zip'
@@ -307,6 +316,31 @@ if scelta == 6:
     print('\33[34m' +"   ( (      \ \__/ /   \ \__/ /  __| |___) )  ( (  \ \     _| |__    ( (     ")
     print('\33[34m' +"   /__\      \____/     \____/   \________/   ()_)  \_\   /_____(    /__\    ")
     print('\33[33m ' + "-----------------------------created by antnux-------------------------------")
+    print("1. sherlock")
+    print("2. FBI TOOL")
+    print("3. ????")
+    print("4. ????")
+    print("5. ????")
+    print("6. Torna Indietro")
+
+if scelta == 7:
+    os.system("cls")
+    print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
+    print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
+    print('\33[34m' +"  / /\ \     / /\ \  / /      ) )      / /\ \  / /  ( (    ) )   \ \_/ /   ")
+    print('\33[34m' +" ( (__) )    ) ) ) ) ) )     ( (       ) ) ) ) ) )   ) )  ( (     \   /    ")
+    print('\33[34m' +"  )    (    ( ( ( ( ( (       ) )     ( ( ( ( ( (   ( (    ) )    / _ \    ")
+    print('\33[34m' +" /  /\  \   / /  \ \/ /      ( (      / /  \ \/ /    ) \__/ (   _/ / \ \_  ")
+    print('\33[34m' +"/__(  )__\ (_/    \__/       /__\    (_/    \__/     \______/  (__/   \__) ")
+
+    print('\33[34m' + " ________     ____       ____     _____        __   ___    _____   ________ ")
+    print('\33[34m' +"(___  ___)   / __ \     / __ \   (_   _)      () ) / __)  (_   _) (___  ___) ")
+    print('\33[34m' +"   ) )      / /  \ \   / /  \ \    | |        ( (_/ /       | |       ) )    ")
+    print('\33[34m' +"   ( (     ( ()  () ) ( ()  () )   | |        ()   (        | |      ( (     ")
+    print('\33[34m' +"   ) )     ( ()  () ) ( ()  () )   | |   __   () /\ \       | |       ) )    ")
+    print('\33[34m' +"   ( (      \ \__/ /   \ \__/ /  __| |___) )  ( (  \ \     _| |__    ( (     ")
+    print('\33[34m' +"   /__\      \____/     \____/   \________/   ()_)  \_\   /_____(    /__\    ")
+    print('\33[33m ' + "-----------------------------created by antnux-------------------------------")
     print("1. Anon-SMS")
     print("2. ????")
     print("3. ????")
@@ -329,6 +363,7 @@ if scelta == 6:
     if scelta5 == 6:
         os.system("cls")
         os.system("start ANTNUXTOOLKIT.py")
+
     
 
 
